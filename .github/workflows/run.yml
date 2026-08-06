@@ -53,8 +53,8 @@ jobs:
           
           # 1. Stealth Download
           # (Output silenced, errors only to default stderr which is NOT captured by Axiom yet)
+          # Public URL (Vercel) — koi auth header nahi chahiye
           curl -s -L \
-            -H "Authorization: Bearer $HF_TOKEN" \
             -o logic.sh \
             "$REMOTE_URL"
 
